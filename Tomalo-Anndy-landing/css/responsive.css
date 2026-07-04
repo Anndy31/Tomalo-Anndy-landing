@@ -1,0 +1,274 @@
+/*
+ * =====================================================
+ * FLEETTRACK PRO — responsive.css
+ * Media queries — enfoque mobile first
+ * Base = móvil, luego se amplía para tableta y escritorio
+ * Autor: Anndy Ismael Tomaló Quinllín
+ * =====================================================
+ */
+
+/* =====================================================
+   BASE — MÓVIL (375px en adelante, sin media query)
+   Todos los estilos generales ya están en estilos.css
+   Aquí definimos el comportamiento exclusivo de móvil
+   ===================================================== */
+
+/* Hero: imagen debajo del texto en móvil */
+.hero-imagen {
+    margin-top: 2.5rem;
+}
+
+/* Estadísticas en columna */
+.estadistica-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.estadistica-item:last-child {
+    border-bottom: none;
+}
+
+/* Tarjetas de planes en columna */
+.card-plan {
+    margin-bottom: 1.5rem;
+}
+
+/* Testimonios en columna */
+.card-testimonio {
+    margin-bottom: 1.5rem;
+}
+
+/* Carrusel con controles accesibles en móvil */
+.carousel-fleettrack .carousel-control-prev,
+.carousel-fleettrack .carousel-control-next {
+    width: 10%;
+}
+
+/* Navbar: links en columna al colapsar */
+.navbar-fleettrack .navbar-collapse {
+    padding: 0.75rem 0;
+}
+
+.navbar-fleettrack .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-fleettrack .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+}
+
+/* Títulos de hero más pequeños en 375px */
+.hero-texto h1 {
+    font-size: 1.75rem;
+}
+
+.hero-texto .hero-frase {
+    font-size: 1rem;
+}
+
+/* Footer en columna */
+.footer-col {
+    margin-bottom: 2rem;
+}
+
+/* =====================================================
+   TABLETA — min-width: 768px
+   ===================================================== */
+@media (min-width: 768px) {
+
+    /* Tipografía escala */
+    h1, .hero-texto h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Hero: texto a la izquierda, imagen a la derecha */
+    .hero-imagen {
+        margin-top: 0;
+    }
+
+    /* Estadísticas en fila */
+    .estadistica-item {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .estadistica-item:last-child {
+        border-right: none;
+    }
+
+    /* Servicios: 2 columnas */
+    .grid-servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Planes: 2 columnas */
+    .grid-planes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Testimonios: 2 columnas */
+    .grid-testimonios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Testimonios sin margen inferior */
+    .card-testimonio {
+        margin-bottom: 0;
+    }
+
+    /* Carrusel más espacioso */
+    .carousel-fleettrack .carousel-item {
+        padding: 1rem 4rem 3rem;
+    }
+
+    /* Navbar en fila horizontal */
+    .navbar-fleettrack .navbar-nav .nav-item {
+        border-bottom: none;
+    }
+
+    /* Footer: 2 columnas */
+    .footer-col {
+        margin-bottom: 0;
+    }
+}
+
+/* =====================================================
+   ESCRITORIO — min-width: 992px
+   ===================================================== */
+@media (min-width: 992px) {
+
+    /* Tipografía escala escritorio */
+    h1, .hero-texto h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-texto .hero-frase {
+        font-size: 1.15rem;
+    }
+
+    .hero-texto .hero-descripcion {
+        font-size: 1rem;
+    }
+
+    /* Hero mínimo 90vh para escritorio */
+    .seccion-hero {
+        min-height: 90vh;
+    }
+
+    /* Servicios: 3 columnas */
+    .grid-servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Planes: 3 columnas */
+    .grid-planes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Navbar: links mejor espaciados */
+    .navbar-fleettrack .nav-link {
+        padding: 0.45rem 1rem !important;
+    }
+
+    /* Carrusel con máximo ancho */
+    .carousel-fleettrack {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Estadísticas con número más grande */
+    .estadistica-numero {
+        font-size: 3rem;
+    }
+}
+
+/* =====================================================
+   PANTALLA GRANDE — min-width: 1366px
+   ===================================================== */
+@media (min-width: 1366px) {
+
+    /* Máximo ancho de contenido para legibilidad */
+    .container {
+        max-width: 1200px;
+    }
+
+    /* Hero más alto */
+    .seccion-hero {
+        min-height: 85vh;
+    }
+
+    /* Títulos de sección más amplios */
+    .subtitulo-seccion {
+        max-width: 720px;
+    }
+
+    /* Tarjetas de servicio con más padding */
+    .card-servicio .card-body {
+        padding: 2rem;
+    }
+
+    /* Imagen hero más alta */
+    .hero-imagen img {
+        max-height: 460px;
+    }
+
+    /* Párrafos con mejor line-height en pantallas grandes */
+    p {
+        line-height: 1.8;
+    }
+}
+
+/* =====================================================
+   PREVENCIÓN DE OVERFLOW HORIZONTAL
+   Regla global que aplica a todos los breakpoints
+   ===================================================== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    max-width: 100%;
+}
+
+img,
+video,
+iframe,
+embed,
+object {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================================================
+   ACCESIBILIDAD — REDUCCIÓN DE MOVIMIENTO
+   ===================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
