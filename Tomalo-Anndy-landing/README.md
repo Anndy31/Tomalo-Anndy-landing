@@ -22,14 +22,6 @@ La landing page comunica de forma clara los servicios de monitoreo GPS, gestión
 
 ---
 
-## Vista previa
-
-![Vista previa de FleetTrack Pro](img/captura-principal.png)
-
-> *Reemplazar con captura real al finalizar el desarrollo.*
-
----
-
 ## Tecnologías utilizadas
 
 - **HTML5** — estructura semántica
@@ -44,7 +36,7 @@ La landing page comunica de forma clara los servicios de monitoreo GPS, gestión
 ## Estructura del proyecto
 
 ```
-tomaló-anndy-landing/
+Tomalo-Anndy-landing/
 │
 ├── index.html               ← Página principal (única)
 │
@@ -55,10 +47,11 @@ tomaló-anndy-landing/
 │
 ├── img/
 │   ├── logo.png             ← Logotipo de la empresa
-│   ├── hero.jpg             ← Imagen principal del hero
-│   ├── servicio-01.jpg      ← Imagen servicio: Monitoreo GPS
-│   ├── servicio-02.jpg      ← Imagen servicio: Gestión de conductores
-│   └── servicio-03.jpg      ← Imagen servicio: Reportes
+│   ├── hero.png             ← Imagen principal del hero
+│   ├── servicio1.png        ← Imagen servicio: Monitoreo GPS
+│   ├── servicio2.png        ← Imagen servicio: Gestión de conductores
+│   ├── servicio3.png        ← Imagen servicio: Reportes
+│   └── mundito.ico          ← Favicon de la página
 │
 ├── docs/
 │   └── informe.pdf          ← Informe técnico del proyecto
@@ -76,7 +69,7 @@ tomaló-anndy-landing/
 4. **Nosotros** — identidad, público y propuesta de valor
 5. **Servicios** — 3 tarjetas Bootstrap con iconos y CTA
 6. **Planes** — carrusel Bootstrap con 3 planes empresariales
-7. **Testimonios** — 2 testimonios de gerentes de empresas reales
+7. **Testimonios** — 2 testimonios de gerentes de empresas
 8. **Contacto** — formulario con nombre, correo, teléfono, select y textarea
 9. **Aside CTA** — banner de llamada a la acción
 10. **Footer** — datos de contacto, redes sociales y copyright
@@ -87,12 +80,12 @@ tomaló-anndy-landing/
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/tomaló-anndy-landing.git
+   git clone https://github.com/Anndy31/Tomalo-Anndy-landing.git
    ```
 
 2. Navega a la carpeta del proyecto:
    ```bash
-   cd tomaló-anndy-landing
+   cd Tomalo-Anndy-landing
    ```
 
 3. Abre `index.html` directamente en tu navegador, o usa Live Server en VS Code.
@@ -101,11 +94,15 @@ tomaló-anndy-landing/
 
 ---
 
+## Enlace del repositorio
+
+🔗 [github.com/Anndy31/Tomalo-Anndy-landing](https://github.com/Anndy31/Tomalo-Anndy-landing)
+
+---
+
 ## Enlace GitHub Pages
 
-🌐 [Ver proyecto publicado](https://usuario.github.io/tomaló-anndy-landing/)
-
-> *Actualizar con el enlace real al publicar en GitHub Pages.*
+🌐 [Ver proyecto publicado](https://anndy31.github.io/Tomalo-Anndy-landing/)
 
 ---
 
@@ -114,16 +111,16 @@ tomaló-anndy-landing/
 | Color | Código | Uso |
 |-------|--------|-----|
 | Azul pastel | `#BED8E8` | Fondos de secciones y testimonios |
-| Celeste | `#D9ECF2` | Fondos alternos, celeste del hero |
+| Celeste | `#D9ECF2` | Fondos alternos, planes y cards |
 | Verde menta | `#CCE4DA` | Sección Nosotros |
-| Azul pizarra | `#425C70` | Header, botones, footer, títulos |
+| Azul pizarra | `#425C70` | Header, botones, footer y títulos |
 
 ---
 
 ## Fuentes de imágenes e iconos
 
 ### Imágenes
-Las imágenes utilizadas provienen de [Unsplash](https://unsplash.com) y [Pexels](https://pexels.com), ambas de uso libre bajo licencia Creative Commons.
+Las imágenes utilizadas provienen de [Unsplash](https://unsplash.com) y [Pexels](https://pexels.com), ambas de uso libre.
 
 - Hero: Unsplash — búsqueda "fleet management dashboard"
 - Servicios: Unsplash — búsqueda "gps tracking", "truck driver", "data analytics"
@@ -139,4 +136,5 @@ Las imágenes utilizadas provienen de [Unsplash](https://unsplash.com) y [Pexels
 |--------|-------------|
 | 375px | iPhone SE |
 | 768px | iPad |
-| 1366px | Laptop estándar |
+| 992px | Laptop estándar |
+| 1366px | Pantalla grande |
